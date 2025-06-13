@@ -55,14 +55,14 @@
             color: #6b8e23;
         }
 
-        .services, .projects {
+        .services, .projects, .education {
             display: flex;
             justify-content: space-around;
             flex-wrap: wrap;
             gap: 20px;
         }
 
-        .service, .project {
+        .service, .project, .educational-item {
             background: #fff;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -72,11 +72,11 @@
             transition: transform 0.3s ease;
         }
 
-        .service:hover, .project:hover {
+        .service:hover, .project:hover, .educational-item:hover {
             transform: translateY(-5px);
         }
 
-        .service img, .project img {
+        .service img, .project img, .educational-item img {
             width: 100%;
             border-radius: 10px;
             margin-bottom: 15px;
@@ -124,6 +124,7 @@
         <a href="#sobre">Sobre</a>
         <a href="#servicos">Serviços</a>
         <a href="#projetos">Projetos</a>
+        <a href="#educacao">Educação</a>
         <a href="#contato">Contato</a>
     </nav>
 
@@ -170,6 +171,27 @@
                 <img src="https://via.placeholder.com/300x200.png?text=Restaura%C3%A7%C3%A3o+do+Solo" alt="Restauração do Solo">
                 <h3>Restauração do Solo</h3>
                 <p>Iniciativa de recuperação de solos degradados por práticas de cultivo erradas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="educacao">
+        <h2>Educação e Capacitação</h2>
+        <div class="education">
+            <div class="educational-item">
+                <img src="https://via.placeholder.com/300x200.png?text=Curso+Agricultura+Sustent%C3%A1vel" alt="Curso Agricultura Sustentável">
+                <h3>Curso de Agricultura Sustentável</h3>
+                <p>Curso para capacitar os produtores familiares em técnicas sustentáveis e práticas agroecológicas.</p>
+            </div>
+            <div class="educational-item">
+                <img src="https://via.placeholder.com/300x200.png?text=Workshop+de+Horta" alt="Workshop de Horta">
+                <h3>Workshop de Horta Caseira</h3>
+                <p>Oficina prática de cultivo de hortas caseiras para a alimentação familiar.</p>
+            </div>
+            <div class="educational-item">
+                <img src="https://via.placeholder.com/300x200.png?text=Capacita%C3%A7%C3%A3o+Empreendedora" alt="Capacitação Empreendedora">
+                <h3>Capacitação Empreendedora Rural</h3>
+                <p>Curso de empreendedorismo para agricultores familiares desenvolverem seus próprios negócios no campo.</p>
             </div>
         </div>
     </section>
