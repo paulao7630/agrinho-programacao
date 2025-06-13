@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Design Futurista 2025</title>
+    <title>Portfólio Agricultura Familiar</title>
     <style>
         * {
             margin: 0;
@@ -14,87 +13,176 @@
 
         body {
             font-family: 'Arial', sans-serif;
-            background: #0f0f0f;
-            color: #fff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
         }
 
-        .container {
+        header {
+            background: #6b8e23; /* Verde oliva */
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            background: linear-gradient(135deg, #4f4f5e, #9e9eaf);
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-            width: 100%;
-            max-width: 400px;
+            font-size: 2.2rem;
         }
 
-        h1 {
-            font-size: 2.5rem;
-            letter-spacing: 2px;
-            margin-bottom: 20px;
-            color: #00f2fe;
+        nav {
+            background: #3e522b; /* Verde mais escuro */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
             text-transform: uppercase;
         }
 
-        p {
-            font-size: 1.2rem;
-            line-height: 1.6;
-            margin-bottom: 30px;
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #6b8e23;
+        }
+
+        .services, .projects {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .service, .project {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 30%;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover, .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .service img, .project img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
         }
 
         .button {
-            background: #00f2fe;
-            color: #0f0f0f;
+            background-color: #6b8e23;
+            color: white;
             padding: 15px 30px;
             border: none;
-            border-radius: 30px;
+            border-radius: 5px;
             font-size: 1.1rem;
-            font-weight: bold;
             text-transform: uppercase;
             cursor: pointer;
+            margin-top: 20px;
             transition: 0.3s ease;
         }
 
         .button:hover {
-            background: #0088a7;
-            transform: translateY(-3px);
+            background-color: #4b6b1f;
         }
 
-        .footer {
-            position: absolute;
-            bottom: 20px;
-            width: 100%;
+        footer {
+            background: #3e522b;
+            color: white;
             text-align: center;
-            font-size: 0.9rem;
-            color: #bbb;
+            padding: 20px;
+            margin-top: 40px;
         }
 
-        .footer a {
-            color: #00f2fe;
+        footer a {
+            color: #6b8e23;
             text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .footer a:hover {
-            color: #fff;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <h1>Bem-vindo ao Futuro</h1>
-        <p>Este é um exemplo de design minimalista para o ano de 2025. Aqui, a tecnologia se encontra com a simplicidade.</p>
-        <button class="button">Explorar</button>
-    </div>
+    <header>
+        Portfólio - Agricultura Familiar
+    </header>
 
-    <div class="footer">
-        <p>Feito com ❤️ por Você | <a href="#">Saiba mais</a></p>
-    </div>
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+    <section id="sobre">
+        <h2>Sobre a Agricultura Familiar</h2>
+        <p>A agricultura familiar é uma prática essencial para a sustentabilidade, focada no cultivo local, preservação ambiental e fortalecimento das comunidades rurais. Com práticas mais responsáveis, ela busca o equilíbrio entre produção e preservação.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Serviços Oferecidos</h2>
+        <div class="services">
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200.png?text=Cultivo+Orgânico" alt="Cultivo Orgânico">
+                <h3>Cultivo Orgânico</h3>
+                <p>Produção sem agrotóxicos, respeitando o meio ambiente.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200.png?text=Venda+Direta" alt="Venda Direta">
+                <h3>Venda Direta ao Consumidor</h3>
+                <p>Comércio justo e direto entre o produtor e o consumidor.</p>
+            </div>
+            <div class="service">
+                <img src="https://via.placeholder.com/300x200.png?text=Educa%C3%A7%C3%A3o+Agr%C3%ADcola" alt="Educação Agrícola">
+                <h3>Educação Agrícola</h3>
+                <p>Capacitação para novos produtores e sustentabilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <h2>Projetos em Andamento</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200.png?text=Projeto+Rural" alt="Projeto Rural">
+                <h3>Projeto Rural Sustentável</h3>
+                <p>Iniciativa para promover a agroecologia e o cultivo sustentável.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200.png?text=Horta+Comunit%C3%A1ria" alt="Horta Comunitária">
+                <h3>Horta Comunitária</h3>
+                <p>Projeto para estimular a produção de alimentos saudáveis nas comunidades urbanas.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300x200.png?text=Restaura%C3%A7%C3%A3o+do+Solo" alt="Restauração do Solo">
+                <h3>Restauração do Solo</h3>
+                <p>Iniciativa de recuperação de solos degradados por práticas de cultivo erradas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Se você se interessa pela agricultura familiar ou quer saber mais sobre nossos projetos, entre em contato!</p>
+        <a href="mailto:contato@agriculturafamiliar.com.br" class="button">Enviar Email</a>
+    </section>
+
+    <footer>
+        <p>© 2025 Agricultura Familiar | <a href="#">Política de Privacidade</a></p>
+    </footer>
 
 </body>
 </html>
